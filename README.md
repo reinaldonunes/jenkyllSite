@@ -13,4 +13,4 @@ Transform your plain text into static websites and blogs.
 
 ## 🚀 Quick start
 
-1.  **Create a Jenkyll site.**
+1. ** Projeto de estudo do funcionamento do Jekyll com Liquid Language e Markdown.
