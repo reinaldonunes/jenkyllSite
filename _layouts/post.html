@@ -3,10 +3,12 @@
         {% include metadatas.html %}
     </head>
     <body>
-        {% include header.html %}
+        {% include header-inside.html %}
 
-        <main class="main flex flexColumn">
-            {% include articles.html %}
+        <main class="main">
+            <article class="post-info">
+                {{ content }}
+            </article>
         </main>
         
         {% include footer.html %}

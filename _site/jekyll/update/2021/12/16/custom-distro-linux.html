@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <head>
+        <title> Kings Jekyll Blog </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Jekyll Gemcode, 2021" />
+<meta name="description" content="Jekyll static blog with Ruby" />
+<meta name="keywords" content="jekyll, static, github, blog, ruby, html, css, javascript" />
+<meta name="robots" content="index, follow">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/default.css" type="text/css" media="screen">
+<script type="text/javascript" src="http://livejs.com/live.js"></script>
+    </head>
+    <body>
+        <header class="alignItems flex headerInside">
+    <main class="flex flexWrap alignItems spaceBetween">
+        <figure>
+            <img src="/assets/img/logo-gh-horizon.png" alt="GitHub Reinaldo Nunes" title="GitHub Reinaldo Nunes" />
+        </figure>
+        <a href="javascript:history.back(-1);" class="button">Voltar</a>
+    </main>
+</header>
+
+        <main class="main">
+            <article class="post-info">
+                <p>Sem dúvida, a customização do seu sistema operacional diz muito sobre sua personalidade, seu workflow e seus gostos. Apesar de sistemas como Windows possibilitarem customizações, de longe as realizadas em distros Linux são as melhores e mais fáceis, ao meu ver, de serem realizadas.</p>
+
+<blockquote>
+  <p>Para estas dicas, foi utilizado o sistema Zorin Core 16, baseado no Ubuntu 20.04 LTS e com DE Gnome 3.38.</p>
+</blockquote>
+
+<h1 id="customização-padrão">CUSTOMIZAÇÃO PADRÃO</h1>
+<p>Todo sistema operacional possui no menu Configurações, uma parte dedicada a customização padrão da interface. No caso do Zorin, há o aplicativo Zorin Appearence, que nos permite modificar a forma de apresentação do workflow, o tema de cores, configurações dos ícones e também das fontes. Particularmente, gosto do tema de cores Dark e do layout Gnome, com todos os aplicativos disponíveis (como na foto abaixo)</p>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-01.png" alt="Tela de apresentação do Zorin Appearence" /></p>
+
+<h3 id="plano-de-fundo">PLANO DE FUNDO</h3>
+<p>Mudar a imagem de fundo padrão da sua distro Linux também pode ser uma tarefa fácil. Indo nas configurações padrões do sistema ou <strong>clique da direita - alterar fundo</strong> já será possível escolher outra imagem. Você poderá optar pelas imagens que o sistema fornece ou mesmo selecionar a sua foto preferida.</p>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-02.png" alt="Configurando e alterando o plano de fundo" /></p>
+
+<h1 id="adicionando-uma-dock">ADICIONANDO UMA DOCK</h1>
+<p>Distros como o Ubuntu tem uma dock lateral, mas com pouca personalização nativa, o que pode dificultar um pouco se você for iniciante no sistema. Porém, há outras distros baseada em Ubuntu que possibilitam uma maior customização desse recurso, como o <strong>Elementary OS</strong> ou <strong>Fenix OS</strong>, onde a dock fica localizada na parte inferior e possui mais opções de customização.</p>
+
+<p>Caso a sua distro não tenha uma dock nativa (como é o caso do Zorin OS), há algumas formas de você adicionar ela ao sistema.</p>
+
+<h3 id="aplicando-a-extensão-dash-to-dock">APLICANDO A EXTENSÃO DASH TO DOCK</h3>
+<p>Há uma extensão para o ambiente GNOME disponível no site <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">Gnome Extensions</a>.  Primeiramente, se você não tiver uma extensão GNOME instalada no seu browser, o site irá notificar e solicitar a instalação. Após terminar a instalação no browser, basta recarregar a página e clicar no botão <strong>ON/OFF</strong>, para ligar ou desligar a dock. Após ligar ela, basta personalizar como desejar.</p>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-03.png" alt="Adicionando a extensão Dash to Dock via browser" /></p>
+
+<h3 id="plank-dock">PLANK DOCK</h3>
+<p>Mas se você preferir uma dock mais elegante e prática, pode então optar por instalar o Plank. O plank cria uma dock integrada no seu sistema, podendo ser facilmente personalizada e customizada, desde aparência, comportamento e também posição.</p>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-04.png" alt="Plank dock" /></p>
+
+<p>Para instalar, há duas formas:</p>
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Abrindo a sua central de programas (ou loja de aplicativos), procure por Plank, depois clique em instalar, aguarde completar e pronto!</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />No terminal, digite:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository -y ppa:ricotz/docky
+sudo apt-get update
+sudo apt-get install plank
+</code></pre></div>    </div>
+    <p>Com isso, o Plank será instalado corretamente.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Se você não gostar do Plank, pode desinstalá-lo via loja de aplicativos ou pelo terminal com <code class="language-plaintext highlighter-rouge">sudo apt-get remove plank --auto-remove</code>.</p>
+</blockquote>
+
+<h1 id="aplicando-temas-de-terceiros">APLICANDO TEMAS DE TERCEIROS</h1>
+<p>Há também outras formas de customizar a sua distro que é através de sites como o <a href="https://www.deviantart.com/">DeviantArt</a> e o <a href="https://www.gnome-look.org/s/Gnome/browse/">Gnome-Look</a>. Neles, é possível baixar diversos temas de desktop, icones, grub, entre outros.</p>
+
+<ol>
+  <li>Acesse o site do Gnome-Looks e pesquiser por algum tema de seu gosto (como MacOs, Fluent, Rounded Theme, etc).</li>
+  <li>Clique no botão Download. Vai aparecer uma lista de pacotes para você escolher e baixar. Clique sobre algum do seu gosto.</li>
+  <li>Na caixa de diálogo que abrir, clique novamentem em Download e aguarde.</li>
+  <li>Na próxima janela que abrir, marque a opção <em>Abrir</em> e depois clique em <em>Ok</em>.</li>
+  <li>Irá aparecer os itens internos do pacote. Clique me <em>Extrair</em>.</li>
+  <li>Vai aparecer as pastas do seu sistema. Pressione <em>CTRL+H</em> para exibir as pastas ocultas e encontre a que se chama <em>.themes</em>. Se não existir, você mesmo poderá criá-la.</li>
+  <li>Dentro da pasta .themes, clique no botão <em>extrair</em> para baixar completamente o tema.</li>
+  <li>Após baixado, basta ir nas configurações padrões do seu sistema e selecionar o tema que foi baixado (veja a primeira seção deste tutorial).</li>
+</ol>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-05.png" alt="Capturas do passo a passo do tema" /></p>
+
+<h3 id="usando-o-gnome-tweaks-como-auxiliar">USANDO O GNOME-TWEAKS COMO AUXILIAR</h3>
+<p>Além dessas opções, você também pode instalar e utilizar o <em>Gnome Tweaks</em> ou <em>Ajustes do Gnome</em> para ter ainda mais poder de configuração e customização na sua distro. Basta abrir a loja de aplicativos e pesquisar por um dos termos mencionados anteriormente para poder utilizá-lo na máquina.</p>
+
+<p><img src="https://raw.githubusercontent.com/reinaldonunes/CustomizeDistroLinux/main/assets/customize-img-06.png" alt="Gnome-Tweaks" /></p>
+
+<p>Se prefir, também poderá instalar a ferramenta via terminal. Primeiro, atualize o APT com <code class="language-plaintext highlighter-rouge">sudo apt update</code> e depois instale digitando <code class="language-plaintext highlighter-rouge">sudo apt install gnome-tweaks</code> colocar sua senha root e aguardar.</p>
+
+<h1 id="instalando-temas-via-terminal">INSTALANDO TEMAS VIA TERMINAL</h1>
+<p>Se você quiser se aventurar mais pelo Linux, poderá fazer customizações diretas via terminal. Na internet é possível encontrar diversos sites que orientam como fazer, já que cada tema terá seu método específico de ser instalado. Para saber mais, recomendo ler este post do site <strong><a href="https://www.vivaolinux.com.br/dica/Como-instalar-temas-no-Ubuntu-1110">Viva o Linux</a></strong>, a maior comunidade de usuários GNU/Linux da América Latina.</p>
+
+            </article>
+        </main>
+        
+        <footer>
+    <main class="flex spaceCenter">
+        <figure>
+            <img src="/assets/img/logo-gh-mini.png" alt="GitHub Reinaldo Nunes" title="GitHub Reinaldo Nunes" />
+        </figure>
+    </main>
+</footer>
+    </body>
+</html>
