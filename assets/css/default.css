@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size:1em;
+	font: inherit;
+    font-family:'Montserrat',sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background:#f9f9f9;
+	line-height: 1;
+}
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing:f border-box;
+}
+html{
+    background:#184C81;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Predefinitions */
+figure{
+    line-height:0px;
+}
+img{
+    width:auto;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+select, input, button{ /* desativa o bottÃ£o padrÃ£o dos selects */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ie-appearance: none;
+}
+.fx{
+    transition-dufration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -moz-transition-duration:0.2s;
+}
+a{
+    text-decoration:none;
+}
+:focus, :visited{
+    outline: 0;
+}
+textarea{
+    resize:none;
+}
+
+/* DISPLAYS */
+.container{width:100%;display: flex;height:auto;padding:60px 20px;}
+.main, main{width:100%;max-width: 1300px;margin:0 auto;height:auto;display:flex;}
+.grid{
+    display: grid;
+    grid-auto-rows: minmax(auto,100%);
+}
+.grid2{grid-template-columns: repeat(2,1fr);}
+.grid3{grid-template-columns: repeat(3,1fr);}
+.grid4{grid-template-columns: repeat(4,1fr);}
+
+.flex{display:flex;}
+
+.flexRow{flex-direction: row;}
+.flexColumn{flex-direction: column;}
+.flexWrap{flex-wrap:wrap;}
+
+.spaceBetween{justify-content: space-between;}
+.spaceEvenly{justify-content: space-evenly;}
+.spaceCenter{justify-content: center;}
+
+.alignItems{align-items: center;}
+
+/* HEADER */
+header{
+    border-bottom:2px solid #f5f5f5;
+    padding:35px 35px;
+    height:70vh;
+    background:#222 url("../img/bg.png") no-repeat center center;
+    background-size:cover;
+    margin-bottom:30px;
+}
+header main{
+    height:100%;
+}
+header figure{margin-bottom:25px;}
+header h1{font-weight:700;font-size:40px;color:#fff;line-height:100%;display:flex;max-width:750px;text-align:center;margin-bottom:30px;}
+header a{
+    display:flex;
+    border-radius:6px;
+    background:#4CCE86;
+    border:3px solid #3eb874;
+    color:#303030;
+    font-weight:bold;
+    padding:12px 30px;
+
+    transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+}
+header a:hover{
+    background:#F54181;
+    border-color:#cc2c64;
+    color:#fff;
+}
+
+footer{
+    background:#030c25;
+    padding:40px 20px;
+}
+footer h6{
+    font-size:12px;
+    color:#fff;
+}
+
+.main{padding:60px 35px;}
+
+.rss-subscribe,
+.post-list-heading{display:none;}
+
+.home{width:100%;}
+.post-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+}
+.post-list li{
+    width:32%;
+    margin-bottom:20px;
+
+    background:#fff;
+    box-shadow:0px 0px 10px #eee;
+    border-radius:7px;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+}
+.post-list .post-meta{
+    font-weight:700;
+    font-size:12px;
+    margin-bottom:10px;
+}
+.post-list h3 a{
+    font-size:20px;
+    color:#cc2c64;
+}
